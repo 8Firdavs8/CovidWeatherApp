@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Link the external stylesheet files and the links for the BootStrap and etc -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>MidTerm Project</title>
+</head>
+<body>
+
+  <!-- Greet the User based on the time of the day -->
+
+      <div class = "container">
+          <div class="col-sm">
+            <h1 id="greeting"></h1> <p id="demo"></p>      
+      </div>
+
+
+      <div class="form-group xs-3">
+      <label id = "textColor" for="exampleFormControlSelect1">Please Select the Name of the County</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+
+
+      </select>
+      </div>
+
+  <!-- Buttons that allow the user to get started with the covid information in particular place they chose -->
+   <!-- Button that allo the user to get started with the weather and the location of the selected city/country -->
+      <div class = container>
+      <div class="d-flex justify-content-center" >
+ 
+      <button id = "clickFor" type="button" class="btn btn-primary" >Get Covid Info</button>
+      </div>
+      <div class="d-flex justify-content-center">
+      <button class="btn btn-success" id="inputInfo" onclick="getInfo()">Get Weather Info</button>
+
+      </div>
+
+
+  <!-- A table which shows the Covid cases for the selected city/country -->
+      <div class = "container" >
+      <h2 class = "text-center mt-5">Covid-19 Cases in Counties</h2>
+      <br>
+      <table id = "textColor" class="table table-striped">
+        <thead id = "textColor">
+            <tr >
+              <th scope="col">County Name</th>
+              <th scope="col">Total Cases Confirmed</th>
+              <th scope="col">Total Dead</th>
+              <th scope="col">Last Updated</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id = "cityCovidData">
+                <td id = "location"></td>
+                <td id = "totalConfirmed"></td>
+                <td id = "totalDead"></td>
+                <td id = "updated"></td>
+
+            </tr>
+            <tr >
+
+            </tr>
+
+        </tbody>
+
+        
+      </table>
+      <br>
+      <br>
+      <!-- A table for the weather information -->
+      <div class="table-responsive">
+      <table id="post" class="table table-hover" classname = "tableInside ">
+        <thead id="post1" class="thead-dark">
+            <th scope="col">County Name</th>
+            <th scope="col">Weather(Celsius)</th>
+            <th scope="col">Description</th>
+            <th scope="col">Icon</th>
+            <th scope="col">Coordinator</th>
+        </thead>
+        <tbody class="table-light" scope="row"></tbody>
+      </table>
+      </div>
+
+      </div>
+
+      <!-- Show the coordinates and the location of the city/country on the map -->
+      <p id="get"></p>
+      <p id="get2"></p>
+
+      <div id="map">
+      </div>
+
+      <!-- Local Storage -->
+      <div id=menu>
+      </div>
+
+
+      <!-- Google API Map -->
+      <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmRmSnfy32J5HEvK3C3Lck5gpym631SMk&callback=getInfo">
+      </script> -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+
+
+
+</div>
+
+  
+  
+  
+</body>
+</html>
