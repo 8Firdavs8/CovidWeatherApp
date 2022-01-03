@@ -2,5 +2,5 @@
 
 # CovidWeatherApp
 --- When the people around the world faced the Covid Situation, I thought it would be a good idea if people could check Covid cases around world when they check the weather. Therefore, I made this web application that pulls the information about the Covid Cases and the weather and presents it on friendly user interface. 
------ APIs for Covid sitatuon may not work but the weather API still works, so good luck using the application!
+----- APIs for Covid cases may not work but the weather API still works, so good luck using the application!
 
